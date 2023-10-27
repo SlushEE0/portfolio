@@ -1,0 +1,18 @@
+.results {
+}
+
+.main {
+  border: 2px solid blue;
+}
+
+.keypad {
+  width: 50vw;
+  height: 70vh;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 2px solid brown;
+}
