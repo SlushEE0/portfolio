@@ -1,0 +1,87 @@
+.main {
+  overflow: hidden;
+
+  width: 98vw;
+  height: 99vh;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: linear-gradient(45deg, var(--background), var(--accent));
+}
+
+.results {
+  width: 20rem;
+  height: 5rem;
+
+  font-size: 4rem;
+  text-anchor: start;
+
+  outline: 2px solid var(--primary);
+}
+
+.calculator {
+  width: 20rem;
+  height: 30rem;
+
+  background-color: var(--background);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calcBtn {
+  width: 5rem;
+  height: 5rem;
+
+  background-color: var(--compl);
+
+  outline: 2px solid var(--primary);
+  margin: none;
+  border: none;
+
+  transition: all 200ms;
+}
+
+.calcBtn:hover {
+  background-color: rgba(var(--compl) 0.9);
+}
+
+.doubleWidthBtn {
+  width: 10rem;
+}
+
+.doubleHeightBtn {
+  height: 10rem;
+}
+
+.lastRow {
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.homeBtn {
+  width: 5rem;
+  height: 2rem;
+
+  position: absolute;
+  top: 1%;
+  left: 1%;
+
+  background-color: var(--compl);
+
+  outline: 2px solid black;
+  margin: none;
+  border: none;
+
+  transition: all 200ms;
+}
+
+.homeBtn:hover {
+  filter: brightness(75%);
+}
+
