@@ -26,6 +26,8 @@ export default function Calculator() {
           .replace('x', '*');
 
         let result: number = eval(evalStr).toPrecision(9);
+        console.log(Math.floor(result), result);
+        if(Math.floor(result) == result) result = Math.floor(result)
 
         SETresults(result.toString());
         SEToperand('');
@@ -64,7 +66,7 @@ export default function Calculator() {
   return (
     <main className={css.main}>
       <button className={css.homeBtn} onClick={() => router.push('/')}>
-        To Home
+        Back Home
       </button>
       <section className={css.calculator}>
         <div className={css.results}>{results}</div>
